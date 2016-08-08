@@ -22,7 +22,7 @@ public class ParseHTML {
 	  Document doc;
 	try {
 
-		File input = new File("/nfs/nfs4/home/aritde/customBookMarker/bookmarks.html");
+		File input = new File("<filepath>/bookmarks.html");
 		doc = Jsoup.parse(input, "UTF-8");
 		int count=0;
 		// get all links
