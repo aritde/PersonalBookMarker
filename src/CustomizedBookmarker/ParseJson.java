@@ -22,7 +22,7 @@ public class ParseJson
 		JSONParser parser = new JSONParser();
 		try
 		{
-			Object obj = parser.parse(new FileReader("/nfs/nfs4/home/aritde/customBookMarker/ChromeBookMarks.html"));
+			Object obj = parser.parse(new FileReader("/<path>/ChromeBookMarks.html"));
 			JSONObject jsonObject = (JSONObject) obj;
 			JSONObject obj1 = (JSONObject) jsonObject.get("roots");
 			JSONObject obj2 = (JSONObject)obj1.get("bookmark_bar");
